@@ -1,25 +1,25 @@
 const menu = {
     starters: [
-        { name: "Caesar Salad", description: "Fresh lettuce, croutons, and Caesar dressing" },
-        { name: "Bruschetta", description: "Grilled bread with tomato and basil" }
+        { name: "סלט קיסר", description: "חסה טרייה, קרוטונים ורוטב קיסר" },
+        { name: "ברוסקטה", description: "לחם קלוי עם עגבניות ובזיליקום" }
     ],
     main: [
-        { name: "Grilled Chicken", description: "Served with vegetables and mashed potatoes" },
-        { name: "Spaghetti Carbonara", description: "Pasta with creamy sauce and pancetta" }
+        { name: "עוף בגריל", description: "מוגש עם ירקות ופירה" },
+        { name: "ספגטי קרבונרה", description: "פסטה ברוטב שמנת ופנצ'טה" }
     ],
     desserts: [
-        { name: "Cheesecake", description: "Rich and creamy cheesecake with berry sauce" },
-        { name: "Tiramisu", description: "Layered Italian dessert with coffee and mascarpone" }
+        { name: "עוגת גבינה", description: "עוגת גבינה עשירה עם רוטב פירות יער" },
+        { name: "טירמיסו", description: "קינוח איטלקי עם קפה ומסקרפונה" }
     ],
     drinks: [
-        { name: "Cappuccino", description: "Rich espresso with steamed milk and foam" },
-        { name: "Lemonade", description: "Freshly squeezed lemons with mint" }
+        { name: "קפוצ'ינו", description: "אספרסו עשיר עם חלב מוקצף" },
+        { name: "לימונדה", description: "לימונים סחוטים טריים עם נענע" }
     ]
 };
 
 function filterMenu(type) {
     const menuContainer = document.getElementById("menu-items");
-    menuContainer.innerHTML = ''; // Clear previous items
+    menuContainer.innerHTML = ''; // נקה פריטים קודמים
 
     menu[type].forEach(item => {
         const menuItem = document.createElement("div");
@@ -29,7 +29,7 @@ function filterMenu(type) {
     });
 }
 
-// Load starters by default
+// טוען את מנות הפתיחה כברירת מחדל
 window.onload = function() {
     filterMenu('starters');
 };
