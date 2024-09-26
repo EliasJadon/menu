@@ -52,6 +52,15 @@ header {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 .menu-item h3 {
@@ -64,4 +73,10 @@ header {
     margin: 5px 0 0;
     font-size: 14px;
     color: #777;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    color: #f39c12;
+    margin-top: 10px;
 }
